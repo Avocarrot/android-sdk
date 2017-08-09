@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ad_types">
+        <item>@string/ad_type_banner</item>
+        <item>@string/ad_type_interstitial</item>
+        <item>@string/ad_type_video</item>
+        <item>@string/ad_type_native</item>
+    </string-array>
+
+    <string-array name="ad_banner_subtypes">
+        <item>@string/ad_banner_subtype_standard</item>
+        <item>@string/ad_banner_subtype_big</item>
+    </string-array>
+
+    <string-array name="ad_native_templates">
+        <item>@string/ad_native_template_list</item>
+        <item>@string/ad_native_template_feed</item>
+        <item>@string/ad_native_template_grid</item>
+        <item>@string/ad_native_template_dynamic</item>
+        <item>@string/ad_native_template_custom</item>
+    </string-array>
+
+    <string-array name="ad_native_list_components">
+        <item>@string/ad_native_component_recycler_adapter</item>
+        <item>@string/ad_native_component_base_adapter</item>
+        <item>@string/ad_native_component_native</item>
+    </string-array>
+
+    <string-array name="ad_native_feed_components">
+        <item>@string/ad_native_component_recycler_adapter</item>
+        <item>@string/ad_native_component_base_adapter</item>
+        <item>@string/ad_native_component_native</item>
+    </string-array>
+
+    <string-array name="ad_native_grid_components">
+        <item>@string/ad_native_component_recycler_adapter</item>
+    </string-array>
+
+    <string-array name="ad_native_dynamic_components">
+        <item>@string/ad_native_component_recycler_adapter</item>
+        <item>@string/ad_native_component_base_adapter</item>
+        <item>@string/ad_native_component_native</item>
+    </string-array>
+
+    <string-array name="ad_native_custom_components">
+        <item>@string/ad_native_component_native</item>
+        <item>@string/ad_native_component_recycler_adapter</item>
+        <item>@string/ad_native_component_base_adapter</item>
+        <item>@string/ad_native_component_native_assets</item>
+        <item>@string/ad_native_component_native_viewpager</item>
+    </string-array>
+
+    <string-array name="layout_orientation">
+        <item>@string/layout_orientation_vertical</item>
+        <item>@string/layout_orientation_horizontal</item>
+    </string-array>
+</resources>

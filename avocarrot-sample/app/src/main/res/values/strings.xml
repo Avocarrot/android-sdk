@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Avocarrot Sample</string>
+    <string name="ad_type_banner">Banner</string>
+    <string name="ad_type_interstitial">Interstitial</string>
+    <string name="ad_type_video">Video</string>
+    <string name="ad_type_native">Native</string>
+    <string name="ad_banner_subtype_standard">Standard size(320x50)</string>
+    <string name="ad_banner_subtype_big">Tablet size(728x90)</string>
+    <string name="ad_native_component_native">NativeAd</string>
+    <string name="ad_native_component_native_assets">NativeAssetsAd</string>
+    <string name="ad_native_component_base_adapter">StreamAdBaseAdapter</string>
+    <string name="ad_native_component_recycler_adapter">StreamAdRecyclerAdapter</string>
+    <string name="ad_native_component_native_viewpager">ViewPager</string>
+    <string name="ad_native_template_list">List</string>
+    <string name="ad_native_template_feed">Feed</string>
+    <string name="ad_native_template_grid">Grid</string>
+    <string name="ad_native_template_dynamic">Dynamic</string>
+    <string name="ad_native_template_custom">Custom</string>
+
+    <string name="layout_orientation_vertical">Vertical</string>
+    <string name="layout_orientation_horizontal">Horizontal</string>
+
+    <string name="ad_interstitial">Interstitial</string>
+    <string name="ad_video">Video Interstitial</string>
+
+    <string name="auto_refresh">Auto update</string>
+
+    <string name="ad_loaded">Ad Loaded</string>
+    <string name="ad_error">Banner error with status</string>
+    <string name="ad_showed">Ad Showed</string>
+    <string name="ad_clicked">Ad Clicked</string>
+    <string name="ad_closed">Ad Closed</string>
+    <string name="ad_completed">Ad Completed</string>
+
+    <string name="interstitial_show">Show Interstitial</string>
+    <string name="interstitial_load">Load Interstitial</string>
+    <string name="interstitial_show_on_load">Load and show</string>
+    <string name="interstitial_delay_show_on_load">Load and show with delay</string>
+
+    <string name="video_show">Show Video</string>
+    <string name="video_load">Load Video</string>
+    <string name="video_show_on_load">Load and show</string>
+
+    <string name="ad_attribution_text">Sponsored</string>
+    <string name="call_to_action_text">Install</string>
+
+    <string name="in_feed_item">Item %d</string>
+    <string name="input_adunitid">Input AdUnit ID</string>
+    <string name="wrond_adunitid">AdUnit ID should match the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</string>
+</resources>

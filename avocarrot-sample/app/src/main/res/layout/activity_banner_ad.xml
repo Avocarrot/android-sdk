@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.avocarrot.demo.banner.BannerActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/auto_refresh"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <CheckBox
+                android:id="@+id/auto_update_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/banner_view_standard"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/banner_view_big"
+            android:layout_width="728dp"
+            android:layout_height="90dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+    </LinearLayout>
+</LinearLayout>
