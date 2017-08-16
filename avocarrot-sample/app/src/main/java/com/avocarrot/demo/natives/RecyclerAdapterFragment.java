@@ -51,7 +51,7 @@ public abstract class RecyclerAdapterFragment extends NativeAdCallbackFragment i
                             .setAdapter(adapter)
                             .setAdUnitId(adUnitId)
                             .setAdViewBuilder(getNativeAdViewBuilder(), getNativeAdViewAttributes())
-                            .setEventCallback(RecyclerAdapterFragment.this)
+                            .setStreamNativeAdCallback(RecyclerAdapterFragment.this)
                             .build(context);
                     recyclerView.setAdapter(adAdapter);
                     adAdapter.loadAd();
