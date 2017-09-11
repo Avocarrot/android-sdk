@@ -73,15 +73,15 @@ public class MainActivity extends AdLifecycleActivity implements ViewPager.OnPag
         Avocarrot.setTestMode(true);
         setContentView(R.layout.activity_main);
 
-        editAdUnitButton = (FloatingActionButton) findViewById(R.id.fab_adunit_id);
-        currentAdUnitIdTextView = (TextView) findViewById(R.id.current_ad_unit_id);
-        RecyclerView adUnitIdListView = (RecyclerView) findViewById(R.id.adunitid_list);
+        editAdUnitButton = findViewById(R.id.fab_adunit_id);
+        currentAdUnitIdTextView = findViewById(R.id.current_ad_unit_id);
+        RecyclerView adUnitIdListView = findViewById(R.id.adunitid_list);
         adUnitIdAdapter = new MainMenuRecyclerAdapter();
 
-        final TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        final ViewPager pager = (ViewPager) findViewById(R.id.viewpager);
-        final LinearLayout adUnitBottomSheet = (LinearLayout) findViewById(R.id.bottom_sheet);
-        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final TabLayout tabLayout = findViewById(R.id.tabs);
+        final ViewPager pager = findViewById(R.id.viewpager);
+        final LinearLayout adUnitBottomSheet = findViewById(R.id.bottom_sheet);
+        final Toolbar toolbar = findViewById(R.id.toolbar);
 
         tabLayout.setupWithViewPager(pager);
         pager.setClipChildren(false);
@@ -91,7 +91,7 @@ public class MainActivity extends AdLifecycleActivity implements ViewPager.OnPag
         final ImagePagerAdapter adapter = new ImagePagerAdapter(this, AD_TYPES, getResources().getStringArray(R.array.ad_types));
         pager.setAdapter(adapter);
 
-        adSubtypeListView = (ListView) findViewById(R.id.ad_subtype_list);
+        adSubtypeListView = findViewById(R.id.ad_subtype_list);
         mainAdapter = new MainAdapter(this, names);
         adSubtypeListView.setAdapter(mainAdapter);
         pager.addOnPageChangeListener(this);
@@ -163,7 +163,7 @@ public class MainActivity extends AdLifecycleActivity implements ViewPager.OnPag
         });
 
         final TextInputLayout textInputLayout = (TextInputLayout) findViewById(R.id.adunitid_input_layout);
-        editView = (EditText) findViewById(R.id.adunitid_value_edit);
+        editView = findViewById(R.id.adunitid_value_edit);
         editView.addTextChangedListener(new TextWatcherAdapter() {
             @Override
             public void afterTextChanged(Editable s) {
@@ -171,7 +171,7 @@ public class MainActivity extends AdLifecycleActivity implements ViewPager.OnPag
             }
         });
 
-        final ImageButton saveView = (ImageButton) findViewById(R.id.adunitid_save);
+        final ImageButton saveView = findViewById(R.id.adunitid_save);
         saveView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {

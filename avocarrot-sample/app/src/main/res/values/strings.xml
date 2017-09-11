@@ -4,8 +4,9 @@
     <string name="ad_type_interstitial">Interstitial</string>
     <string name="ad_type_video">Video</string>
     <string name="ad_type_native">Native</string>
-    <string name="ad_banner_subtype_standard">Standard size(320x50)</string>
-    <string name="ad_banner_subtype_big">Tablet size(728x90)</string>
+    <string name="ad_banner_subtype_standard">Standard size (320x50)</string>
+    <string name="ad_banner_subtype_mrec">MREC size (300x250)</string>
+    <string name="ad_banner_subtype_big">Tablet size (728x90)</string>
     <string name="ad_native_component_native">NativeAd</string>
     <string name="ad_native_component_native_assets">NativeAssetsAd</string>
     <string name="ad_native_component_base_adapter">StreamAdBaseAdapter</string>
@@ -47,4 +48,5 @@
     <string name="in_feed_item">Item %d</string>
     <string name="input_adunitid">Input AdUnit ID</string>
     <string name="wrond_adunitid">AdUnit ID should match the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</string>
+    <string name="ad_native_template_fullscreen">Fullscreen</string>
 </resources>

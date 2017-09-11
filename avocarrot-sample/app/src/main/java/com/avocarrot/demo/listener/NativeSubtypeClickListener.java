@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import com.avocarrot.demo.natives.CustomNativeAdActivity;
 import com.avocarrot.demo.natives.DynamicTemplateNativeAdActivity;
 import com.avocarrot.demo.natives.FeedTemplateNativeAdActivity;
+import com.avocarrot.demo.natives.FullscreenTemplateNativeAdActivity;
 import com.avocarrot.demo.natives.GridTemplateNativeAdActivity;
 import com.avocarrot.demo.natives.ListTemplateNativeAdActivity;
 
@@ -33,6 +34,9 @@ public class NativeSubtypeClickListener extends AdSubtypeClickListener {
                 context.startActivity(DynamicTemplateNativeAdActivity.buildIntent(context));
                 break;
             case 4:
+                context.startActivity(FullscreenTemplateNativeAdActivity.buildIntent(context));
+                break;
+            case 5:
                 context.startActivity(CustomNativeAdActivity.buildIntent(context));
                 break;
             default:

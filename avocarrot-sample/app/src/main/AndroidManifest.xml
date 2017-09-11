@@ -1,45 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.avocarrot.demo">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.avocarrot.demo">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
-    <uses-sdk tools:overrideLibrary="com.mopub.volley, com.facebook.ads" />
+    <uses-sdk tools:overrideLibrary="com.mopub.volley, com.facebook.ads"/>
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:name="com.avocarrot.demo.App"
-        android:theme="@style/AvocarrotDemoTheme"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:theme="@style/AvocarrotDemoTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name="com.avocarrot.demo.MainActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustNothing"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name="com.avocarrot.demo.banner.StandardBannerActivity"
-            android:label="@string/ad_banner_subtype_standard" />
+            android:label="@string/ad_banner_subtype_standard"/>
+        <activity
+            android:name="com.avocarrot.demo.banner.MrecBannerActivity"
+            android:label="@string/ad_banner_subtype_mrec"/>
         <activity
             android:name="com.avocarrot.demo.banner.BigBannerActivity"
-            android:label="@string/ad_banner_subtype_big" />
+            android:label="@string/ad_banner_subtype_big"/>
         <activity
             android:name="com.avocarrot.demo.interstitial.InterstitialActivity"
-            android:label="@string/ad_interstitial" />
+            android:label="@string/ad_interstitial"/>
         <activity
             android:name="com.avocarrot.demo.video.VideoActivity"
-            android:label="@string/ad_video" />
+            android:label="@string/ad_video"/>
         <activity
             android:name="com.avocarrot.demo.natives.ListTemplateNativeAdActivity"
             android:label="@string/ad_native_template_list"/>
@@ -52,6 +55,9 @@
         <activity
             android:name="com.avocarrot.demo.natives.DynamicTemplateNativeAdActivity"
             android:label="@string/ad_native_template_dynamic"/>
+        <activity
+            android:name="com.avocarrot.demo.natives.FullscreenTemplateNativeAdActivity"
+            android:label="@string/ad_native_template_fullscreen"/>
         <activity
             android:name="com.avocarrot.demo.natives.CustomNativeAdActivity"
             android:label="@string/ad_native_template_custom"/>

@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.avocarrot.demo.banner.BigBannerActivity;
+import com.avocarrot.demo.banner.MrecBannerActivity;
 import com.avocarrot.demo.banner.StandardBannerActivity;
 
 public class BannerSubtypeClickListener extends AdSubtypeClickListener {
@@ -21,6 +22,9 @@ public class BannerSubtypeClickListener extends AdSubtypeClickListener {
                 context.startActivity(StandardBannerActivity.buildIntent(context));
                 break;
             case 1:
+                context.startActivity(MrecBannerActivity.buildIntent(context));
+                break;
+            case 2:
                 context.startActivity(BigBannerActivity.buildIntent(context));
                 break;
             default:

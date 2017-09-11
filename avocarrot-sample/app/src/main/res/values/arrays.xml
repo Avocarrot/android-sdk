@@ -9,6 +9,7 @@
 
     <string-array name="ad_banner_subtypes">
         <item>@string/ad_banner_subtype_standard</item>
+        <item>@string/ad_banner_subtype_mrec</item>
         <item>@string/ad_banner_subtype_big</item>
     </string-array>
 
@@ -17,6 +18,7 @@
         <item>@string/ad_native_template_feed</item>
         <item>@string/ad_native_template_grid</item>
         <item>@string/ad_native_template_dynamic</item>
+        <item>@string/ad_native_template_fullscreen</item>
         <item>@string/ad_native_template_custom</item>
     </string-array>
 

@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.avocarrot.demo.natives.NativeAdActivity"
+    tools:ignore="ContentDescription"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/fullscreen_show_on_load"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interstitial_show_on_load" />
+
+    <Button
+        android:id="@+id/fullscreen_load"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interstitial_load" />
+
+    <Button
+        android:id="@+id/fullscreen_show"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/interstitial_show" />
+
+</LinearLayout>

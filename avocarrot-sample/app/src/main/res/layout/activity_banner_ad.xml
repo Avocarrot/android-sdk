@@ -51,6 +51,14 @@
             tools:visibility="visible"/>
 
         <RelativeLayout
+            android:id="@+id/banner_view_mrec"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <RelativeLayout
             android:id="@+id/banner_view_big"
             android:layout_width="728dp"
             android:layout_height="90dp"

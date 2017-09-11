@@ -17,9 +17,9 @@ import com.avocarrot.sdk.nativead.NativeAdView;
 
 public abstract class NativeAdFragment extends NativeAdCallbackFragment {
     @Nullable
-    private FrameLayout adContainerView;
+    private ViewGroup adContainerView;
     @Nullable
-    private NativeAd nativeAd;
+    protected NativeAd nativeAd;
 
     @Override
     public void onActivityCreated(@Nullable final Bundle savedInstanceState) {
@@ -39,13 +39,21 @@ public abstract class NativeAdFragment extends NativeAdCallbackFragment {
 
     @Override
     public View onCreateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
-        adContainerView = (FrameLayout) inflater.inflate(R.layout.fragment_native_ad, container, false);
+        adContainerView = inflateContainerView(inflater, container);
         return adContainerView;
+    }
+
+    protected ViewGroup inflateContainerView(final LayoutInflater inflater, final ViewGroup container) {
+        return (ViewGroup) inflater.inflate(R.layout.fragment_native_ad, container, false);
     }
 
     @Override
     public void onAdLoaded(@NonNull final NativeAd nativeAd) {
         super.onAdLoaded(nativeAd);
+        renderAdView(nativeAd);
+    }
+
+    protected void renderAdView(@NonNull final NativeAd nativeAd) {
         final View nativeView = nativeAd.renderAdView();
         if (adContainerView != null && nativeView != null) {
             adContainerView.removeAllViews();

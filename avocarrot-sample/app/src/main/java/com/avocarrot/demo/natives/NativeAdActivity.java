@@ -22,12 +22,12 @@ public abstract class NativeAdActivity extends AdLifecycleActivity implements Ad
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_native_ad);
 
-        layoutSpinner = (AppCompatSpinner) findViewById(R.id.layout_spinner);
+        layoutSpinner = findViewById(R.id.layout_spinner);
         final ArrayAdapter<String> layoutAdapter = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.layout_orientation));
         layoutSpinner.setAdapter(layoutAdapter);
         layoutAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
 
-        final AppCompatSpinner componentSpinner = (AppCompatSpinner) findViewById(R.id.component_spinner);
+        final AppCompatSpinner componentSpinner = findViewById(R.id.component_spinner);
         final ArrayAdapter<String> componentAdapter = new ArrayAdapter<>(this, R.layout.spinner_item, getComponentSpinnerItems());
         componentSpinner.setAdapter(componentAdapter);
         componentAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
