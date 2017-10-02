@@ -1,3 +1,8 @@
+## Version 4.6.1 (October 2, 2017)
+- Bugfixing:
+    - Crash on devices running Android 8.0 Oreo (API 26)
+    - Vungle SDK proguard issue
+    
 ## Version 4.6.0 (September 11, 2017)
 - MREC banner size (300x250) support
 - The minimum Android SDK version is increased to 14(Android 4.0 API/`ICE_CREAM_SANDWICH`)
