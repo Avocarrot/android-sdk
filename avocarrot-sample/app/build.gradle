@@ -3,7 +3,7 @@ apply from: rootProject.file('config/quality.gradle')
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
         minSdkVersion 14
@@ -44,34 +44,35 @@ repositories {
     maven {
         url 'https://maven.google.com'
     }
+    maven { url "https://s3.amazonaws.com/moat-sdk-builds" } // required by mopub (more info: https://github.com/mopub/mopub-android-sdk#download)
     maven { url "https://s3.amazonaws.com/avocarrot-android-builds/dist/" }
 }
 
 dependencies {
     // Avocarrot SDK dependencies
-    compile 'com.avocarrot.sdk:mediation-admob-banner:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-admob-interstitial:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-admob-nativead:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-applovin-interstitial:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-applovin-nativead:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-chartboost-interstitial:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-facebook-banner:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-facebook-interstitial:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-facebook-nativead:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-inlocomedia-banner:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-inlocomedia-interstitial:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-inlocomedia-nativead:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-mopub-banner:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-mopub-interstitial:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-mopub-nativead:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-nativex-interstitial:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-nativex-video:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-unityads-video:4.6.1'
-    compile 'com.avocarrot.sdk:mediation-vungle-video:4.6.1'
+    compile 'com.avocarrot.sdk:mediation-admob-banner:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-admob-interstitial:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-admob-nativead:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-applovin-interstitial:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-applovin-nativead:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-chartboost-interstitial:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-facebook-banner:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-facebook-interstitial:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-facebook-nativead:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-inlocomedia-banner:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-inlocomedia-interstitial:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-inlocomedia-nativead:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-mopub-banner:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-mopub-interstitial:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-mopub-nativead:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-nativex-interstitial:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-nativex-video:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-unityads-video:4.6.2'
+    compile 'com.avocarrot.sdk:mediation-vungle-video:4.6.2'
     //
-    compile 'com.android.support:appcompat-v7:26.0.1'
-    compile 'com.android.support:recyclerview-v7:26.0.1'
-    compile 'com.android.support:design:26.0.1'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:multidex:1.0.1'
 }

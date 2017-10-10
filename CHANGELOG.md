@@ -1,3 +1,13 @@
+## Version 4.6.2 (October 10, 2017)
+- Removed VAST-module dependency from `mediation-sdk-native-assets`
+- Updated the following dependencies:
+    - Android Support Libraries to 26.1.0 
+    - Google Play Services to 11.4.2
+    - Facebook Audience Network SDK to 4.26.0
+    - InLocoMedia SDK to 3.3.2
+    - MoPub SDK to 4.17.0
+    - UnityAds SDK to 2.1.1
+
 ## Version 4.6.1 (October 2, 2017)
 - Bugfixing:
     - Crash on devices running Android 8.0 Oreo (API 26)
