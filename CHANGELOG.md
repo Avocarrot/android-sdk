@@ -1,3 +1,6 @@
+## Version 4.7.0 (October 23, 2017) 
+- Removed Support Appcompat library dependency from `native-assets` module
+
 ## Version 4.6.2 (October 10, 2017)
 - Removed VAST-module dependency from `mediation-sdk-native-assets`
 - Updated the following dependencies:

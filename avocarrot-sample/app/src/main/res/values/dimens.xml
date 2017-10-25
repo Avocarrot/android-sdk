@@ -2,4 +2,5 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="pager_margin">0dp</dimen>
+    <dimen name="bottom_sheet_height">48dp</dimen>
 </resources>
