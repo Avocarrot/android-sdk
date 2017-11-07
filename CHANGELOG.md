@@ -1,4 +1,10 @@
-## Version 4.7.0 (October 23, 2017) 
+## Version 4.7.1 (November 7, 2017)
+- Performance improvements
+- Updated the following dependencies:
+    - Facebook Audience Network SDK to 4.26.1
+    - MoPub SDK to 4.18.0
+
+## Version 4.7.0 (October 23, 2017)
 - Removed Support Appcompat library dependency from `native-assets` module
 
 ## Version 4.6.2 (October 10, 2017)
