@@ -35,12 +35,9 @@
 
     <string name="interstitial_show">Show Interstitial</string>
     <string name="interstitial_load">Load Interstitial</string>
-    <string name="interstitial_show_on_load">Load and show</string>
-    <string name="interstitial_delay_show_on_load">Load and show with delay</string>
 
     <string name="video_show">Show Video</string>
     <string name="video_load">Load Video</string>
-    <string name="video_show_on_load">Load and show</string>
 
     <string name="ad_attribution_text">Sponsored</string>
     <string name="call_to_action_text">Install</string>

@@ -35,7 +35,7 @@ public class InterstitialActivity extends AdLifecycleActivity implements Interst
         super.onCreate(savedInstanceState);
         setContentView(com.avocarrot.demo.R.layout.activity_interstitial_ad);
 
-        showView = (Button) findViewById(com.avocarrot.demo.R.id.interstitial_show);
+        showView = findViewById(com.avocarrot.demo.R.id.interstitial_show);
         if (showView != null) {
             showView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -52,24 +52,6 @@ public class InterstitialActivity extends AdLifecycleActivity implements Interst
             public void onClick(View v) {
                 if (interstitialAd != null) {
                     interstitialAd.reloadAd();
-                    showView.setEnabled(interstitialAd.isReady());
-                }
-            }
-        });
-        findViewById(com.avocarrot.demo.R.id.interstitial_show_on_load).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (interstitialAd != null) {
-                    interstitialAd.reloadAndShowAd();
-                    showView.setEnabled(interstitialAd.isReady());
-                }
-            }
-        });
-        findViewById(com.avocarrot.demo.R.id.interstitial_delay_show_on_load).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (interstitialAd != null) {
-                    interstitialAd.reloadAndShowAdWithDelay();
                     showView.setEnabled(interstitialAd.isReady());
                 }
             }

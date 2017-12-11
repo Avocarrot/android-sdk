@@ -36,12 +36,6 @@
             android:layout_height="wrap_content"
             android:text="@string/video_show"/>
 
-        <Button
-            android:id="@+id/video_show_on_load"
-            style="?android:textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/video_show_on_load"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -1,3 +1,15 @@
+## Version 4.7.2 (December 11, 2017)
+- Public API changes:
+    - `InterstitialAd`: removed `reloadAndShowAd()` and `reloadAndShowAdWithDelay()` methods
+    - `InterstitialAdPool`: removed `loadAndShow()` and `loadAndShowWithDelay()` methods
+    - `VideoAd`: removed `reloadAndShowAd()` method
+    - `VideoAdPool`: removed `loadAndShow()` method
+- Bugfixing
+- Updated the following dependencies:
+    - Android Support Libraries to 27.0.2
+    - Google Play Services to 11.6.2
+    - InLocoMedia SDK to 3.3.10
+
 ## Version 4.7.1 (November 7, 2017)
 - Performance improvements
 - Updated the following dependencies:

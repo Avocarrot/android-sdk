@@ -21,7 +21,6 @@ public class FullscreenTemplateNativeAdFragment extends NativeAdCallbackFragment
     private boolean showOnLoad = false;
     private Button loadButton;
     private Button showButton;
-    private Button loadAndShowButton;
     @Nullable
     private NativeAd nativeAd;
 
@@ -45,7 +44,6 @@ public class FullscreenTemplateNativeAdFragment extends NativeAdCallbackFragment
         final ViewGroup adContainerView = (ViewGroup) inflater.inflate(R.layout.fragment_native_fullscreen_ad, container, false);
         loadButton = adContainerView.findViewById(R.id.fullscreen_load);
         showButton = adContainerView.findViewById(R.id.fullscreen_show);
-        loadAndShowButton = adContainerView.findViewById(R.id.fullscreen_show_on_load);
 
         loadButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,19 +62,6 @@ public class FullscreenTemplateNativeAdFragment extends NativeAdCallbackFragment
             public void onClick(View v) {
                 if (nativeAd != null) {
                     renderAdView(nativeAd);
-                }
-            }
-        });
-        loadAndShowButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (nativeAd != null) {
-                    if (nativeAd.isReady()) {
-                        nativeAd.renderAdView();
-                    } else {
-                        showOnLoad = true;
-                        nativeAd.reloadAd();
-                    }
                 }
             }
         });

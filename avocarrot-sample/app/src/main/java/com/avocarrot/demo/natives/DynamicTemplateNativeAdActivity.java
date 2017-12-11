@@ -35,7 +35,7 @@ public class DynamicTemplateNativeAdActivity extends NativeAdActivity {
 
     @Override
     protected String getToolbarTitle() {
-        return getString(com.avocarrot.demo.R.string.ad_native_template_feed);
+        return getString(com.avocarrot.demo.R.string.ad_native_template_dynamic);
     }
 
     @Override

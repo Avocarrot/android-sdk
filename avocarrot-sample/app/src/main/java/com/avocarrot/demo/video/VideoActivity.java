@@ -33,7 +33,7 @@ public class VideoActivity extends AdLifecycleActivity implements VideoAdCallbac
         super.onCreate(savedInstanceState);
         setContentView(com.avocarrot.demo.R.layout.activity_video_ad);
 
-        showView = (Button) findViewById(com.avocarrot.demo.R.id.video_show);
+        showView = findViewById(com.avocarrot.demo.R.id.video_show);
         showView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,16 +52,6 @@ public class VideoActivity extends AdLifecycleActivity implements VideoAdCallbac
                 }
             }
         });
-        findViewById(com.avocarrot.demo.R.id.video_show_on_load).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (videoAd != null) {
-                    videoAd.reloadAndShowAd();
-                    showView.setEnabled(videoAd.isReady());
-                }
-            }
-        });
-
         final String adUnitId = new AdUnitIdStorage(this, AdType.VIDEO).getSelectedAdUnitID();
 
         videoAd = VideoAdPool.load(this, adUnitId, true, this);
