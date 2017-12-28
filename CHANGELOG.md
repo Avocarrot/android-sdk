@@ -1,3 +1,18 @@
+## Version 4.7.3 (December 28, 2017) 
+- Native Assets caching added
+- Public API changes:
+  Due `NativeAssetsAd` used mostly in mediation adapters, we've decided to add caching to provide better fillrate. 
+  Now `NativeAssetsAdPool` responsible to cache your `NativeAssetsAd` until it will be invalidated by `destroy()` method call, 
+  or if you will load `NativeAssetsAd` with `Activity` as `Context`, ad will be automatically removed from cache after 
+  receiving impression and `onActivityDestroyed()` callback from `Activity` with which `NativeAssetsAd` was loaded.
+  If you want to load `NativeAssetsAd` with any other `Context` subclasses, except `Activity`, you're
+  responsible to manage `NativeAssetsAdPool` cache by calling `destroy()` method when you don't need 
+  `NativeAssetsAd` anymore, or by calling `unregisterViews()` if you want to use one instance of 
+  `NativeAssetsAd` with different instances of `Context`.    
+  `NativeAssetsAd` method `reloadAd()` is deprecated now.
+- Updated the following dependencies:
+    - Google Play Services to 11.8.0
+
 ## Version 4.7.2 (December 11, 2017)
 - Public API changes:
     - `InterstitialAd`: removed `reloadAndShowAd()` and `reloadAndShowAdWithDelay()` methods

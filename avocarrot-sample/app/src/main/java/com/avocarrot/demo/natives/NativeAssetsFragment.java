@@ -173,7 +173,7 @@ public class NativeAssetsFragment extends Fragment implements NativeAssetsAdCall
     public void onDestroy() {
         super.onDestroy();
         if (nativeAssetsAd != null) {
-            nativeAssetsAd.destroy();
+            nativeAssetsAd.unregisterViews();
         }
     }
 }

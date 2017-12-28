@@ -82,7 +82,7 @@ You must set up each 3rd-party network on the Avocarrot website, otherwise they 
 * Android 4.0 (API Version 14) and up
 * support-annotations, v27.0.2
 * support-v4, v27.0.2
-* **Recommended** Google Play Services 11.6.2
+* **Recommended** Google Play Services 11.8.0
 
 We strongly recommend compiling your app using **Google Play services**, in order to use the `Android Advertising ID`
 instead of the`Device ID`, as required by Google. Failing to correctly use the `Android Advertising ID` may result in your submission to the Play Store being rejected.
@@ -104,32 +104,32 @@ repositories {
 }
 
 dependencies {
-  compile 'com.avocarrot.sdk:mediation-sdk-banner:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-sdk-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-sdk-video:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-sdk-nativead:4.7.2'
+  compile 'com.avocarrot.sdk:mediation-sdk-banner:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-sdk-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-sdk-video:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-sdk-nativead:4.7.3'
   //3rd party SDKs if you need. Don't need to corresponding mediation-sdk module
-  compile 'com.avocarrot.sdk:mediation-admob-banner:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-admob-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-admob-nativead:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-applovin-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-applovin-nativead:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-chartboost-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-facebook-banner:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-facebook-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-facebook-nativead:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-inlocomedia-banner:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-inlocomedia-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-inlocomedia-nativead:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-mopub-banner:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-mopub-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-mopub-nativead:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-nativex-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-nativex-video:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-unityads-video:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-vungle-video:4.7.2'
+  compile 'com.avocarrot.sdk:mediation-admob-banner:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-admob-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-admob-nativead:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-applovin-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-applovin-nativead:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-chartboost-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-facebook-banner:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-facebook-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-facebook-nativead:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-inlocomedia-banner:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-inlocomedia-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-inlocomedia-nativead:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-mopub-banner:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-mopub-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-mopub-nativead:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-nativex-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-nativex-video:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-unityads-video:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-vungle-video:4.7.3'
 
-  compile 'com.google.android.gms:play-services-ads:11.6.2'
+  compile 'com.google.android.gms:play-services-ads:11.8.0'
 }
 ```
 
@@ -148,53 +148,53 @@ maven { url "https://s3.amazonaws.com/moat-sdk-builds" } // required by mopub (m
 }
 
 dependencies {
-  compile(name: 'core', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-sdk', version:'4.7.2', ext: 'aar')
+  compile(name: 'core', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-sdk', version:'4.7.3', ext: 'aar')
   
   //To use Native Assets only 
-  compile(name: 'mediation-sdk-native-assets', version:'4.7.2', ext: 'aar')
+  compile(name: 'mediation-sdk-native-assets', version:'4.7.3', ext: 'aar')
   
   //To use Banners and Interstitials
-  compile(name: 'mediation-sdk-mraid', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-sdk-banner', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-sdk-interstitial', version:'4.7.2', ext: 'aar')
+  compile(name: 'mediation-sdk-mraid', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-sdk-banner', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-sdk-interstitial', version:'4.7.3', ext: 'aar')
   
   //To use Video and Native Ads
-  compile(name: 'mediation-sdk-vast', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-sdk-video', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-sdk-nativead', version:'4.7.2', ext: 'aar')
+  compile(name: 'mediation-sdk-vast', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-sdk-video', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-sdk-nativead', version:'4.7.3', ext: 'aar')
   
   //3rd party SDKs
-  compile(name: 'mediation-admob', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-admob-banner', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-admob-interstitial', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-admob-nativead', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-applovin', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-applovin-interstitial', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-applovin-nativead', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-chartboost', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-chartboost-interstitial', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-facebook', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-facebook-banner', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-facebook-interstitial', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-facebook-nativead', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-inlocomedia', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-inlocomedia-banner', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-inlocomedia-interstitial', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-inlocomedia-nativead', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-mopub', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-mopub-banner', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-mopub-interstitial', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-mopub-nativead', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-nativex', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-nativex-inerstitial', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-nativex-video', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-unityads', version:'4.7.2', ext: 'aar')
-  compile(name: 'mediation-unityads-video', version:'4.7.2', ext: 'aar'
-  compile(name: 'mediation-vungle', version:'4.7.2', ext: 'aar'))
-  compile(name: 'mediation-vungle-video', version:'4.7.2', ext: 'aar')
+  compile(name: 'mediation-admob', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-admob-banner', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-admob-interstitial', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-admob-nativead', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-applovin', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-applovin-interstitial', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-applovin-nativead', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-chartboost', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-chartboost-interstitial', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-facebook', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-facebook-banner', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-facebook-interstitial', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-facebook-nativead', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-inlocomedia', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-inlocomedia-banner', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-inlocomedia-interstitial', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-inlocomedia-nativead', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-mopub', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-mopub-banner', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-mopub-interstitial', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-mopub-nativead', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-nativex', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-nativex-inerstitial', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-nativex-video', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-unityads', version:'4.7.3', ext: 'aar')
+  compile(name: 'mediation-unityads-video', version:'4.7.3', ext: 'aar'
+  compile(name: 'mediation-vungle', version:'4.7.3', ext: 'aar'))
+  compile(name: 'mediation-vungle-video', version:'4.7.3', ext: 'aar')
 
-  compile 'com.google.android.gms:play-services-ads:11.6.2'
+  compile 'com.google.android.gms:play-services-ads:11.8.0'
   compile 'com.facebook.android:audience-network-sdk:4.26.1'
   compile('com.mopub:mopub-sdk-banner:4.18.0@aar') {
     transitive = true
@@ -463,6 +463,14 @@ For example:
     
 ```
 
+`NativeAssetsAdPool` responsible to cache your `NativeAssetsAd` until it will be invalidated by `destroy()` method call, 
+or if you will load `NativeAssetsAd` with `Activity` as `Context`, ad will be automatically removed from cache after 
+receiving impression and `onActivityDestroyed()` callback from `Activity` with which `NativeAssetsAd` was loaded.
+If you want to load `NativeAssetsAd` with any other `Context` subclasses, except `Activity`, you're
+responsible to manage `NativeAssetsAdPool` cache by calling `destroy()` method when you don't need 
+`NativeAssetsAd` anymore, or by calling `unregisterViews()` if you want to use one instance of 
+`NativeAssetsAd` with different instances of `Context`.    
+`NativeAssetsAd` method `reloadAd()` is deprecated now.
 
 ## Native and In-Feed, Templates and UI ##
 

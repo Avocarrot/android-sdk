@@ -35,7 +35,7 @@ Avocarrot 在客户端一侧支持以下广告平台：
 
 | 特定  | 平台  | 版本  |
 |----------|----------|----------|
-|`mediation-admob-banner`|[Google Mobile Ads](https://developers.google.com/admob/android/quick-start)|v11.6.2, API 14: Android 4.0 (Ice Cream Sandwich)|
+|`mediation-admob-banner`|[Google Mobile Ads](https://developers.google.com/admob/android/quick-start)|v11.8.0, API 14: Android 4.0 (Ice Cream Sandwich)|
 |`mediation-mopub-banner`|[MoPub](https://github.com/mopub/mopub-android-sdk)|v4.18.0, API 16: Android 4.1 (JELLY_BEAN)|
 |`mediation-facebook-banner`| [Facebook Audience](https://developers.facebook.com/docs/audience-network)|v4.26.1, API 15: Android 4.0.3 (ICE_CREAM_SANDWICH_MR1)|
 |`mediation-inlocomedia-banner`| [InLocoMedia](http://docs.inlocomedia.com)| v3.3.10, API 14: Android 4.0 (ICE_CREAM_SANDWICH)|
@@ -44,7 +44,7 @@ Avocarrot 在客户端一侧支持以下广告平台：
 
 | 特定  | 平台  | 版本  |
 |----------|----------|----------|
-|`mediation-admob-interstitial`|[Google Mobile Ads](https://developers.google.com/admob/android/quick-start)|v11.6.2, API 14: Android 4.0 (Ice Cream Sandwich)|
+|`mediation-admob-interstitial`|[Google Mobile Ads](https://developers.google.com/admob/android/quick-start)|v11.8.0, API 14: Android 4.0 (Ice Cream Sandwich)|
 |`mediation-mopub-interstitial`|[MoPub](https://github.com/mopub/mopub-android-sdk)|v4.18.0, API 16: Android 4.1 (JELLY_BEAN)|
 |`mediation-chartboost-interstitial`|[Chartboost](https://answers.chartboost.com/hc/en-us/articles/201219545-Download-Integrate-the-Chartboost-SDK-for-Android)|v7.0.0, API 14: Android 4.0 (Ice Cream Sandwich)|
 |`mediation-facebook-interstitial`|[Facebook Audience](https://developers.facebook.com/docs/audience-network)|v4.26.1, API 15: Android 4.0.3 (ICE_CREAM_SANDWICH_MR1)|
@@ -65,7 +65,7 @@ Avocarrot 在客户端一侧支持以下广告平台：
 
 | 特定  | 平台  | 版本  |
 |----------|----------|----------|
-|`mediation-admob-nativead`|[Google Mobile Ads](https://developers.google.com/admob/android/quick-start)|v11.6.2, API 14: Android 4.0 (Ice Cream Sandwich)|
+|`mediation-admob-nativead`|[Google Mobile Ads](https://developers.google.com/admob/android/quick-start)|v11.8.0, API 14: Android 4.0 (Ice Cream Sandwich)|
 |`mediation-mopub-nativead`|[MoPub](https://github.com/mopub/mopub-android-sdk)|v4.18.0, API 16: Android 4.1 (JELLY_BEAN)|
 |`mediation-facebook-nativead`|[Facebook Audience](https://developers.facebook.com/docs/audience-network)|v4.26.1, API 15: Android 4.0.3 (ICE_CREAM_SANDWICH_MR1)|
 |`mediation-applovin-nativead`|[AppLovin](https://github.com/AppLovin/Android-Demo-App)|v7.0.3, API 9: Android 2.3 (Gingerbread)|
@@ -80,7 +80,7 @@ Avocarrot 在客户端一侧支持以下广告平台：
 * Android 4.0 (API Version 14) and up
 * support-annotations, v27.0.2
 * support-v4, v27.0.2
-* **推荐** Google Play Services 11.6.2
+* **推荐** Google Play Services 11.8.0
 
 我们强烈建议使用Google Play services编译你的app，从而按照Google的要求使用Android Advertising ID代替Device ID。没有正确使用Android Advertising ID可能导致你向Play Store的提交被拒绝。
 
@@ -105,32 +105,32 @@ repositories {
 }
 
 dependencies {
-  compile 'com.avocarrot.sdk:mediation-sdk-banner:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-sdk-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-sdk-video:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-sdk-nativead:4.7.2'
+  compile 'com.avocarrot.sdk:mediation-sdk-banner:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-sdk-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-sdk-video:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-sdk-nativead:4.7.3'
   //3rd party SDKs if you need. Don't need to corresponding mediation-sdk module
-  compile 'com.avocarrot.sdk:mediation-admob-banner:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-admob-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-admob-nativead:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-applovin-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-applovin-nativead:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-chartboost-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-facebook-banner:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-facebook-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-facebook-nativead:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-inlocomedia-banner:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-inlocomedia-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-inlocomedia-nativead:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-mopub-banner:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-mopub-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-mopub-nativead:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-nativex-interstitial:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-nativex-video:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-unityads-video:4.7.2'
-  compile 'com.avocarrot.sdk:mediation-vungle-video:4.7.2'
+  compile 'com.avocarrot.sdk:mediation-admob-banner:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-admob-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-admob-nativead:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-applovin-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-applovin-nativead:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-chartboost-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-facebook-banner:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-facebook-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-facebook-nativead:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-inlocomedia-banner:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-inlocomedia-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-inlocomedia-nativead:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-mopub-banner:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-mopub-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-mopub-nativead:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-nativex-interstitial:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-nativex-video:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-unityads-video:4.7.3'
+  compile 'com.avocarrot.sdk:mediation-vungle-video:4.7.3'
 
-  compile 'com.google.android.gms:play-services-ads:11.6.2'
+  compile 'com.google.android.gms:play-services-ads:11.8.0'
 }
 ```
 
@@ -149,53 +149,53 @@ repositories {
 }
 
 dependencies {
-  compile(name: 'core', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-sdk', version:'4.7.2', ext: 'aar')
+  compile(name: 'core', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-sdk', version:'4.7.3', ext: 'aar')
     
     //To use Native Assets only 
-    compile(name: 'mediation-sdk-native-assets', version:'4.7.2', ext: 'aar')
+    compile(name: 'mediation-sdk-native-assets', version:'4.7.3', ext: 'aar')
     
     //To use Banners and Interstitials
-    compile(name: 'mediation-sdk-mraid', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-sdk-banner', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-sdk-interstitial', version:'4.7.2', ext: 'aar')
+    compile(name: 'mediation-sdk-mraid', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-sdk-banner', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-sdk-interstitial', version:'4.7.3', ext: 'aar')
     
     //To use Video and Native Ads
-    compile(name: 'mediation-sdk-vast', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-sdk-video', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-sdk-nativead', version:'4.7.2', ext: 'aar')
+    compile(name: 'mediation-sdk-vast', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-sdk-video', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-sdk-nativead', version:'4.7.3', ext: 'aar')
     
     //3rd party SDKs
-    compile(name: 'mediation-admob', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-admob-banner', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-admob-interstitial', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-admob-nativead', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-applovin', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-applovin-interstitial', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-applovin-nativead', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-chartboost', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-chartboost-interstitial', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-facebook', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-facebook-banner', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-facebook-interstitial', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-facebook-nativead', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-inlocomedia', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-inlocomedia-banner', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-inlocomedia-interstitial', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-inlocomedia-nativead', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-mopub', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-mopub-banner', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-mopub-interstitial', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-mopub-nativead', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-nativex', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-nativex-inerstitial', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-nativex-video', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-unityads', version:'4.7.2', ext: 'aar')
-    compile(name: 'mediation-unityads-video', version:'4.7.2', ext: 'aar'
-    compile(name: 'mediation-vungle', version:'4.7.2', ext: 'aar'))
-    compile(name: 'mediation-vungle-video', version:'4.7.2', ext: 'aar')
+    compile(name: 'mediation-admob', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-admob-banner', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-admob-interstitial', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-admob-nativead', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-applovin', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-applovin-interstitial', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-applovin-nativead', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-chartboost', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-chartboost-interstitial', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-facebook', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-facebook-banner', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-facebook-interstitial', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-facebook-nativead', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-inlocomedia', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-inlocomedia-banner', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-inlocomedia-interstitial', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-inlocomedia-nativead', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-mopub', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-mopub-banner', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-mopub-interstitial', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-mopub-nativead', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-nativex', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-nativex-inerstitial', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-nativex-video', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-unityads', version:'4.7.3', ext: 'aar')
+    compile(name: 'mediation-unityads-video', version:'4.7.3', ext: 'aar'
+    compile(name: 'mediation-vungle', version:'4.7.3', ext: 'aar'))
+    compile(name: 'mediation-vungle-video', version:'4.7.3', ext: 'aar')
   
-    compile 'com.google.android.gms:play-services-ads:11.6.2'
+    compile 'com.google.android.gms:play-services-ads:11.8.0'
     compile 'com.facebook.android:audience-network-sdk:4.26.1'
     compile('com.mopub:mopub-sdk-banner:4.18.0@aar') {
       transitive = true
