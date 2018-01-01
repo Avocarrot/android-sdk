@@ -11,7 +11,7 @@ Boost your app's revenue streams and save time: sign up for an account at [Avoca
 * [Requirements and Dependencies](#requirements-and-dependencies)
 * [Add the Avocarrot SDK and 3rd-party Networks to your Project](#add-the-avocarrot-sdk-and-3rd-party-networks-to-your-project)
 * [Modify your Android Manifest](#modify-your-android-manifest)
-* [Banner Initialization](#banner-initialization)
+* [Banner Initialization and Activity](#banner-initialization-and-activity)
 * [Interstitial Initialization and Activity](#interstitial-initialization-and-activity)
 * [Video Initialization and Activity](#video-initialization-and-activity)
 * [Native Assets](#native-assets)
@@ -242,7 +242,7 @@ ad assets available even after the user closes the app.
 
 Please see the Android documentation [here](https://developer.android.com/studio/build/shrink-code.html).
 
-## Banner Initialization ##
+## Banner Initialization and Activity ##
 Add a banner to layout file, e.g.:
 ```xml
 <FrameLayout
@@ -373,6 +373,7 @@ Or you can manage resources downloading by yourself, when you will receive a `Na
 
 There is a common algorithm to use when implementing a Native Assets Ad:
 1. Create your own subclass of `View`  which will be used as ad view container.
+2. Initialize `NativeAssetsAd` by N`ativeAssetsAdPool.load(context, "YOUR_NATIVE_AD_UNIT_ID", nativeAssetsAdListener);` call to start loading of assets
 3. Initialize `NativeAssetsAd` by `NativeAssetsAdPool.load(context, "YOUR_NATIVE_AD_UNIT_ID", nativeAssetsAdListener);` call to start loading of assets
 4. Get `NativeAssets` in `onAdLoaded(@NonNull NativeAssetsAd nativeAssetsAd, @NonNull NativeAssets nativeAssets)` callback of `nativeAssetsAdListener`
 5. Render the Ad view container
