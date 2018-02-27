@@ -1,3 +1,6 @@
+## Version 4.7.5 (February 28, 2018) 
+- Native Assets caching fix
+
 ## Version 4.7.3 (December 28, 2017) 
 - Native Assets caching added
 - Public API changes:
