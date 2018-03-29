@@ -1,4 +1,7 @@
-## Version 4.7.5 (February 28, 2018) 
+## Version 4.8.0 (March 29, 2018)
+- Support MRAID 3.0 / Vast / Vpaid
+
+## Version 4.7.5 (February 27, 2018) 
 - Native Assets caching fix
 
 ## Version 4.7.3 (December 28, 2017) 
