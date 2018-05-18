@@ -49,11 +49,11 @@ repositories {
 
 dependencies {
     // Avocarrot SDK dependencies
-    compile 'com.avocarrot.sdk:mediation-sdk-banner:4.9.0'
-    compile 'com.avocarrot.sdk:mediation-sdk-interstitial:4.9.0'
-    compile 'com.avocarrot.sdk:mediation-sdk-nativead:4.9.0'
-    compile 'com.avocarrot.sdk:mediation-sdk-native-assets:4.9.0'
-    compile 'com.avocarrot.sdk:mediation-sdk-video:4.9.0'
+    compile 'com.avocarrot.sdk:mediation-sdk-banner:4.10.0'
+    compile 'com.avocarrot.sdk:mediation-sdk-interstitial:4.10.0'
+    compile 'com.avocarrot.sdk:mediation-sdk-nativead:4.10.0'
+    compile 'com.avocarrot.sdk:mediation-sdk-native-assets:4.10.0'
+    compile 'com.avocarrot.sdk:mediation-sdk-video:4.10.0'
     //
     compile 'com.google.code.gson:gson:2.8.2'
     compile 'com.android.support:appcompat-v7:27.1.0'
