@@ -23,6 +23,7 @@ proguard_logs/
 .gradle/
 build/
 
+
 ### Mac OS ###
 *.DS_Store
 
