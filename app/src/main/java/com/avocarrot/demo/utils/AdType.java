@@ -4,15 +4,19 @@ import android.support.annotation.NonNull;
 
 public enum AdType {
     BANNER(
+            "00000000-0000-0000-0000-000000000001",
             "3dfbb889-3bcd-4c34-82ae-8fcb539c3b25"
     ),
     INTERSTITIAL(
+            "00000000-0000-0000-0000-000000000000",
             "6b34bf0e-04c4-47f9-b4d3-caeddeab0b13"
     ),
     VIDEO(
+            "00000000-0000-0000-0000-000000000005",
             "032c0809-0335-4e98-8f8c-8e522f291d0f"
     ),
     NATIVE(
+            "00000000-0000-0000-0000-000000000007",
             "e5cc8e6d-d674-402a-aeca-eda7856bd7af"
     );
 

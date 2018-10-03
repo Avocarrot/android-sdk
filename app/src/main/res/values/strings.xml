@@ -27,7 +27,7 @@
     <string name="auto_refresh">Auto update</string>
 
     <string name="ad_loaded">Ad Loaded</string>
-    <string name="ad_error">Banner error with status</string>
+    <string name="ad_error">Banner error with status: %1$s</string>
     <string name="ad_showed">Ad Showed</string>
     <string name="ad_clicked">Ad Clicked</string>
     <string name="ad_closed">Ad Closed</string>

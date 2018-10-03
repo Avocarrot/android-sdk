@@ -46,7 +46,7 @@ repositories {
     maven {
         url 'https://maven.google.com'
     }
-    maven { url "https://s3.amazonaws.com/avocarrot-android-builds/dist/" }
+    maven { url "https://s3.amazonaws.com/avocarrot-android-builds/qa/" }
 }
 
 dependencies {
